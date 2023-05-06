@@ -5,7 +5,8 @@ import { connect } from 'react-redux'
 
 const CakeContainer = (props) => {
     return (
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4 border-black border  px-4'>
+            <h1 className='font-bold'>Using connect</h1>
             <h2>Number Of Cakes: <span className='text-5xl pl-4'>{props.numOfCakes}</span></h2>
             <button className='px-2 py-1 rounded-md text-white shadow-md bg-gray-700 flex justify-center w-full' onClick={props.buyCake}>Buy Cakes</button>
         </div>
