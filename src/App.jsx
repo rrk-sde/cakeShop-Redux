@@ -3,6 +3,7 @@ import store from "./redux/store"
 import CakeContainer from "./components/CakeContainer"
 import HooksCakeContainer from "./components/HooksCakeContainer"
 import IceCreamContainer from "./components/IceCreamContainer"
+import PostContainer from "./components/PostContainer"
 
 
 
@@ -14,10 +15,11 @@ function App() {
 
       <div className="flex gap-4 flex-col justify-center items-center min-h-screen">
         <h1 className="font-extralight text-2xl">REDUX</h1>
-        <HooksCakeContainer />
+        {/* <HooksCakeContainer /> */}
         {/* <CakeContainer /> */}
-        <IceCreamContainer />
-        <h1>Note: Other method is <span className="border border-red-400 px-2 py-1"> subscribe</span></h1>
+        {/* <IceCreamContainer /> */}
+        <PostContainer />
+        {/* <h1>Note: Other method is <span className="border border-red-400 px-2 py-1"> subscribe</span></h1> */}
       </div>
     </Provider >
 
