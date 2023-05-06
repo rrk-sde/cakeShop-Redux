@@ -11,7 +11,7 @@ function cakeReducer(state = initiaState, action) {
         case BUY_CAKE:
             return {
                 ...state,
-                numOfCakes: state.numOfCakes - 1
+                numOfCakes: state.numOfCakes - action.payload
             }
 
 
